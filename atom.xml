@@ -6,7 +6,7 @@
   <link href="https://suwzw.zeabur.app/atom.xml" rel="self"/>
   
   <link href="https://suwzw.zeabur.app/"/>
-  <updated>2024-08-09T10:46:17.956Z</updated>
+  <updated>2024-08-10T11:23:10.047Z</updated>
   <id>https://suwzw.zeabur.app/</id>
   
   <author>
@@ -17,12 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>无云服务器零成本个人博客搭建</title>
-    <link href="https://suwzw.zeabur.app/2024/08/09/2024-8-9/"/>
-    <id>https://suwzw.zeabur.app/2024/08/09/2024-8-9/</id>
-    <published>2024-08-09T10:34:12.579Z</published>
-    <updated>2024-08-09T10:46:17.956Z</updated>
+    <title>markdown语法快速入门</title>
+    <link href="https://suwzw.zeabur.app/2024/08/10/2024-8-10/"/>
+    <id>https://suwzw.zeabur.app/2024/08/10/2024-8-10/</id>
+    <published>2024-08-10T09:16:57.252Z</published>
+    <updated>2024-08-10T11:23:10.047Z</updated>
     
+    <content type="html"><![CDATA[<h1 id="一-基本语法"><a href="#一-基本语法" class="headerlink" title="一.基本语法"></a>一.基本语法</h1><h2 id="1-创建标题"><a href="#1-创建标题" class="headerlink" title="1.创建标题"></a>1.创建标题</h2><p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题</p><h2 id="2-引用"><a href="#2-引用" class="headerlink" title="2.引用"></a>2.引用</h2><p>引用写法： &gt;这是一段引用<br>效果如下</p><blockquote><p>这是一段引用</p></blockquote><h2 id="3-有序列表"><a href="#3-有序列表" class="headerlink" title="3.有序列表"></a>3.有序列表</h2><p>写法：注意 <code>.</code> 后要留空格 </p><ol><li>阿巴阿巴</li><li>阿巴阿巴</li><li>阿巴阿巴</li></ol><h2 id="4-无序列表"><a href="#4-无序列表" class="headerlink" title="4. 无序列表"></a>4. 无序列表</h2><p>写法：<code>-</code>后空格再输入阿巴阿巴</p><ul><li>阿巴阿巴</li><li>阿巴阿巴</li></ul><h2 id="5-任务列表"><a href="#5-任务列表" class="headerlink" title="5. 任务列表"></a>5. 任务列表</h2><p>写法：<code>-</code>后加空格再打<code>[ ]</code>,中阔号内部和后面均有空格</p><ul><li><input checked="" disabled="" type="checkbox"> 吃饭 </li><li><input checked="" disabled="" type="checkbox"> 睡觉 </li><li><input disabled="" type="checkbox"> 打豆豆</li></ul><h2 id="6-代码块"><a href="#6-代码块" class="headerlink" title="6. 代码块"></a>6. 代码块</h2><p>写法: <code> ```key</code>（key为你需要的语言），输入代码后再以<code> &#39;&#39;&#39;</code>结尾</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span>  <span class="string">&lt;stdio.h&gt;</span>`</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span>`</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hello world\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/u012102104/article/details/78950290" title="key">常用语言表格</a></p><h2 id="7-数学公式"><a href="#7-数学公式" class="headerlink" title="7. 数学公式"></a>7. 数学公式</h2><p>写法：<code>$$</code>LaTeX代码<code>$$</code><br>如<code>$$f(x) = \int_&#123;-\infty&#125;^\infty  \hat f(x)\xi\,e^&#123;2 \pi i \xi x&#125;  \,\mathrm&#123;d&#125;\xi$$ </code><br>生成效果：$$f(x) &#x3D; \int_{-\infty}^\infty  \hat f(x)\xi,e^{2 \pi i \xi x}  ,\mathrm{d}\xi$$<br><a href="https://www.latexlive.com/home##" title="可以拍照生成你想要的LaTeX公式代码">LaTeX公式编辑器</a></p><h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8. 表格"></a>8. 表格</h2><p>写法：<code>:</code>在左边为左对齐，右边为右对齐<code>|:---:|</code>是中间对齐的意思</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|姓名|年龄|性别</span><br><span class="line">|:---|---:|:---:|</span><br><span class="line">|不知名根号三|19|武装直升机|</span><br></pre></td></tr></table></figure><p>效果：</p><table><thead><tr><th align="left">姓名</th><th align="right">年龄</th><th align="center">性别</th></tr></thead><tbody><tr><td align="left">不知名根号三</td><td align="right">19</td><td align="center">武装直升机</td></tr></tbody></table><h2 id="9-脚注"><a href="#9-脚注" class="headerlink" title="9. 脚注"></a>9. 脚注</h2><p>写法：点击可跳转</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">markdown是什么[^解释]</span><br><span class="line">[<span class="symbol">^解释</span>]:<span class="link">Markdown 是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素。Markdown 由 John Gruber 于 2004 年创建，如今已成为世界上最受欢迎的标记语言之一。</span></span><br></pre></td></tr></table></figure><p>效果:markdown是什么[^解释]<br>[^解释]:Markdown 是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素。Markdown 由 John Gruber 于 2004 年创建，如今已成为世界上最受欢迎的标记语言之一。</p><h2 id="10-分割线"><a href="#10-分割线" class="headerlink" title="10. 分割线"></a>10. 分割线</h2><h2 id="写法：-效果："><a href="#写法：-效果：" class="headerlink" title="写法：---效果："></a>写法：<code>---</code><br>效果：</h2><h2 id="11-链接"><a href="#11-链接" class="headerlink" title="11. 链接"></a>11. 链接</h2><p>写法1：<code>[我的追番目录](https://suwzw.zeabur.app/bangumis/ &quot;我的追番目录&quot;)</code><br>效果：<a href="https://suwzw.zeabur.app/bangumis/" title="我的追番目录">我的追番目录</a></p><p>写法2: 直接插入链接 <a href="https://suwzw.zeabur.app/bangumis/">https://suwzw.zeabur.app/bangumis/</a></p><h2 id="12-图片的插入"><a href="#12-图片的插入" class="headerlink" title="12. 图片的插入"></a>12. 图片的插入</h2><p>写法：如<code>![雪之下雪乃](/img/wallhaven-6d6jk6.jpg)</code><br>效果: <img src="/img/wallhaven-6d6jk6.jpg" alt="雪之下雪乃"></p><h2 id="13-文字"><a href="#13-文字" class="headerlink" title="13. 文字"></a>13. 文字</h2><p>写法：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span> <span class="strong">**加粗**</span>  <span class="code">`行内代码`</span>  <span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>下划线<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure><p>效果：<br><em>斜体</em> <strong>加粗</strong>  <code>行内代码</code>  <u>下划线</u></p><h2 id="13-表情"><a href="#13-表情" class="headerlink" title="13. 表情"></a>13. 表情</h2><p>写法：<code>:表情名:</code>如<code>:smile:</code><br>效果:smile:<br>表情大全：<a href="https://blog.csdn.net/qq_40896997/article/details/106551767">https://blog.csdn.net/qq_40896997/article/details/106551767</a></p><h2 id="14-上标-下标-高亮"><a href="#14-上标-下标-高亮" class="headerlink" title="14. 上标|下标|高亮"></a>14. 上标|下标|高亮</h2><p>写法：<code>H~2~O</code> <code>X^2^</code> <code>==高亮高亮==</code><br>效果：H<del>2</del>O X^2^ &#x3D;&#x3D;高亮高亮&#x3D;&#x3D;</p><h2 id="15-嵌入视频"><a href="#15-嵌入视频" class="headerlink" title="15. 嵌入视频"></a>15. 嵌入视频</h2><p>本笔记是观看b站markdown学习视频后的学习笔记(已三连:kissing_heart:)，视频如下</p><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=327623069&bvid=BV1JA411h7Gw&cid=171385214&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><h2 id="16-跳转标题"><a href="#16-跳转标题" class="headerlink" title="16. 跳转标题"></a>16. 跳转标题</h2><p>效果：<br><a href="#%E4%B8%80.%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">基本语法</a><br><a href="##1.%E5%88%9B%E5%BB%BA%E6%A0%87%E9%A2%98">创建标题</a><br><a href="##2.%E5%BC%95%E7%94%A8">引用</a><br><a href="##3.%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">有序列表</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一-基本语法&quot;&gt;&lt;a href=&quot;#一-基本语法&quot; class=&quot;headerlink&quot; title=&quot;一.基本语法&quot;&gt;&lt;/a&gt;一.基本语法&lt;/h1&gt;&lt;h2 id=&quot;1-创建标题&quot;&gt;&lt;a href=&quot;#1-创建标题&quot; class=&quot;headerlink&quot; titl</summary>
+      
     
     
     
@@ -30,19 +37,12 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://suwzw.zeabur.app/2024/08/09/hello-world/"/>
-    <id>https://suwzw.zeabur.app/2024/08/09/hello-world/</id>
-    <published>2024-08-09T06:30:08.206Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
+    <title>无云服务器零成本个人博客搭建</title>
+    <link href="https://suwzw.zeabur.app/2024/08/09/2024-8-9/"/>
+    <id>https://suwzw.zeabur.app/2024/08/09/2024-8-9/</id>
+    <published>2024-08-09T10:34:12.579Z</published>
+    <updated>2024-08-09T10:46:17.956Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
     
     
     
