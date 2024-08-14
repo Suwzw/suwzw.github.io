@@ -330,3 +330,22 @@ svg.icon {
 }
 
 
+@media screen and (orientation: portrait) {
+    #web_bg {
+        background: url(/img/48E7ECD8692826D5F37A73DA82690AD0.png);
+        background-attachment: local;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #web_bg {
+        background: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202404/ac429d6a07f452aa53968e115477911c--4188066966.jpg);
+        background-attachment: local;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
