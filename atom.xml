@@ -6,7 +6,7 @@
   <link href="https://www.kamiwzw.asia/atom.xml" rel="self"/>
   
   <link href="https://www.kamiwzw.asia/"/>
-  <updated>2024-08-13T07:26:03.554Z</updated>
+  <updated>2024-08-14T04:36:56.553Z</updated>
   <id>https://www.kamiwzw.asia/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vercel加速博客</title>
+    <link href="https://www.kamiwzw.asia/2024/08/14/vercel%E5%8A%A0%E9%80%9F%E8%AE%BF%E9%97%AE/"/>
+    <id>https://www.kamiwzw.asia/2024/08/14/vercel%E5%8A%A0%E9%80%9F%E8%AE%BF%E9%97%AE/</id>
+    <published>2024-08-14T04:15:30.934Z</published>
+    <updated>2024-08-14T04:36:56.553Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>之前是用zeabur部署，实际体验之后发现vercel有免费的cdn服务，访问更快，这里前置工作部署vercel和zeabur方法一样</p></blockquote><h1>前置工作</h1><ul class="lvl-0"><li class="lvl-2"><p>进入<a href="https://vercel.com/">vercel官网</a>，用github账号登录并授权仓库，import自己搭建博客用的仓库</p></li><li class="lvl-2"><p>去注册一个域名，我下面都是以腾讯云为例</p></li></ul><h1>vercel官网操作</h1><ol><li class="lvl-3"><p>进入项目的settings界面</p></li><li class="lvl-3"><p>点击左侧栏<code>Domains</code></p></li><li class="lvl-3"><p>add自己注册的域名</p></li></ol><h1>腾讯云操作</h1><ol><li class="lvl-3"><p>进入域名控制面板</p></li><li class="lvl-3"><p>找到云解析DNS</p></li><li class="lvl-3"><p>进行域名解析</p><ul class="lvl-2"><li class="lvl-6">顶级域名解析主机记录选@，类型A，记录指复制粘贴vercel给的value就行</li><li class="lvl-6">二级域名解析我是www，类型是CNAME,记录值填vercel官网给的就行如图 <img src="/img/814.png" alt="dns"><br>然后等vercel那边两个选项都打上√就行了像这样 <img src="/img/verceldns.png" alt="vercel"></li></ul></li></ol><h1>效果</h1><p>先看看zeabur部署，ping的效果<img src="/img/5E317BC5662D27E4378849A0A8226FDE.png" alt="在线ping"><br>再看看vercel加速之后的效果<br><img src="/img/4E4D986E69B63759D4D87AD774C19099.png" alt="在线ping"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;之前是用zeabur部署，实际体验之后发现vercel有免费的cdn服务，访问更快，这里前置工作部署vercel和zeabur方法一样&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;前置工作&lt;/h1&gt;
+&lt;ul class=&quot;lvl-0&quot;&gt;
+&lt;li c</summary>
+      
+    
+    
+    
+    <category term="网站搭建与butterfly美化" scheme="https://www.kamiwzw.asia/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E4%B8%8Ebutterfly%E7%BE%8E%E5%8C%96/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>markdown语法快速入门</title>
