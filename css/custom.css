@@ -330,7 +330,7 @@ svg.icon {
 }
 
 
-/* @media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {
     #web_bg {
         background: url(/img/48E7ECD8692826D5F37A73DA82690AD0.png);
         background-attachment: local;
@@ -348,4 +348,4 @@ svg.icon {
         background-size: cover;
         background-repeat: no-repeat;
     }
-} */
+}
