@@ -6,7 +6,7 @@
   <link href="https://www.kamiwzw.asia/atom.xml" rel="self"/>
   
   <link href="https://www.kamiwzw.asia/"/>
-  <updated>2024-08-17T01:02:51.025Z</updated>
+  <updated>2024-08-17T03:01:06.000Z</updated>
   <id>https://www.kamiwzw.asia/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://www.kamiwzw.asia/posts/9daba997/"/>
+    <id>https://www.kamiwzw.asia/posts/9daba997/</id>
+    <published>2024-08-17T03:00:08.716Z</published>
+    <updated>2024-08-17T03:01:06.000Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>bangumi追番插件引入与实时更新数据</title>
