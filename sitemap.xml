@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.kamiwzw.asia/posts/12bcb2cc/</loc>
+    
+    <lastmod>2024-10-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kamiwzw.asia/posts/65bb825a/</loc>
+    
+    <lastmod>2024-10-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kamiwzw.asia/posts/fcb2d3e0/</loc>
+    
+    <lastmod>2024-10-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kamiwzw.asia/posts/768a1c08/</loc>
+    
+    <lastmod>2024-09-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kamiwzw.asia/posts/38329971/</loc>
+    
+    <lastmod>2024-08-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.kamiwzw.asia/posts/c190d0e8/</loc>
     
     <lastmod>2024-08-27</lastmod>
@@ -130,7 +175,7 @@
 
   <url>
     <loc>https://www.kamiwzw.asia/</loc>
-    <lastmod>2024-08-30</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -139,22 +184,29 @@
 
   
   <url>
-    <loc>https://www.kamiwzw.asia/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E4%B8%8Ebutterfly%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2024-08-30</lastmod>
+    <loc>https://www.kamiwzw.asia/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/</loc>
+    <lastmod>2024-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.kamiwzw.asia/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%89%AB%E7%9B%B2/</loc>
-    <lastmod>2024-08-30</lastmod>
+    <loc>https://www.kamiwzw.asia/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E4%B8%8Ebutterfly%E7%BE%8E%E5%8C%96/</loc>
+    <lastmod>2024-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.kamiwzw.asia/categories/%E8%8B%B1%E8%AF%AD%E5%85%AD%E7%BA%A7/</loc>
+    <lastmod>2024-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.kamiwzw.asia/categories/python/</loc>
-    <lastmod>2024-08-30</lastmod>
+    <lastmod>2024-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
