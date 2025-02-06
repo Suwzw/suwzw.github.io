@@ -1,0 +1,381 @@
+/* 页脚与头图透明 */
+#footer {
+    background: transparent !important;
+}
+
+#page-header {
+    background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+    background: transparent !important;
+}
+
+#page-header::before {
+    background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+    background: transparent !important;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
+}
+
+
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+}
+
+/* 一级菜单居中 */
+#nav .menus_items {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* 子菜单横向展示 */
+#nav .menus_items .menus_item:hover .menus_item_child {
+    display: flex !important;
+}
+
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+    left: -125px;
+}
+
+/* 夜间模式菜单栏发光字 */
+[data-theme="dark"] #nav .site-page,
+[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {
+    text-shadow: 0 0 2px rgb(179, 71, 241) !important;
+}
+
+/* 手机端适配 */
+[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {
+    text-shadow: 0 0 2px rgb(179, 71, 241) !important;
+}
+
+/* 闪烁变动颜色连续渐变 */
+#site-name,
+#site-title,
+#site-subtitle,
+#post-info,
+.author-info__name,
+.author-info__description {
+    transition: text-shadow 1s linear !important;
+}
+
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content>.card-widget.card-info {
+    background: linear-gradient(-45deg,
+            #e8d8b9,
+            #eccec5,
+            #a3e9eb,
+            #bdbdf0,
+            #eec1ea);
+    box-shadow: 0 0 5px rgb(66, 68, 68);
+    position: relative;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite !important;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 黑夜模式适配 */
+[data-theme="dark"] #aside-content>.card-widget.card-info {
+    background: #191919ee;
+}
+
+/* 个人信息Follow me按钮 */
+#aside-content>.card-widget.card-info>#card-info-btn {
+    background-color: #3eb8be;
+    border-radius: 8px;
+}
+
+:root {
+    --trans-light: rgba(255, 255, 255, 0.88);
+    --trans-dark: rgba(25, 25, 25, 0.2);
+    --border-style: 0.8px solid rgb(169, 169, 169);
+    --backdrop-filter: blur(5px) saturate(150%);
+}
+
+/* 首页文章卡片 */
+#recent-posts>.recent-post-item {
+    background: var(--trans-light);
+    backdrop-filter: var(--backdrop-filter);
+    border-radius: 25px;
+    border: var(--border-style);
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+    background: var(--trans-light);
+    backdrop-filter: var(--backdrop-filter);
+    border-radius: 18px;
+    border: var(--border-style);
+}
+
+/* 文章页、归档页、普通页面 */
+div#post,
+div#page,
+div#archive {
+    background: var(--trans-light);
+    backdrop-filter: var(--backdrop-filter);
+    border: var(--border-style);
+    border-radius: 20px;
+}
+
+/* 导航栏 */
+#page-header.nav-fixed #nav {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: var(--backdrop-filter);
+}
+
+[data-theme="dark"] #page-header.nav-fixed #nav {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts>.recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+    background: var(--trans-dark);
+}
+
+
+/* 夜间模式页脚页头遮罩透明 */
+[data-theme="dark"] #footer::before {
+    background: transparent !important;
+}
+
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
+}
+
+/* 阅读模式 */
+.read-mode #aside-content .card-widget {
+    background: rgba(158, 204, 171, 0.5) !important;
+}
+
+.read-mode div#post {
+    background: rgba(158, 204, 171, 0.5) !important;
+}
+
+/* 夜间模式下的阅读模式 */
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+    background: rgba(25, 25, 25, 0.9) !important;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .read-mode div#post {
+    background: rgba(25, 25, 25, 0.9) !important;
+    color: #ffffff;
+}
+
+svg.icon {
+    width: 1.28em;
+    height: 1.28em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* Aplayer日间模式调整 */
+/* 背景色 */
+.aplayer {
+    background: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc:after,
+.aplayer.aplayer-fixed .aplayer-lrc:before {
+    display: none;
+}
+
+.aplayer.aplayer.aplayer-fixed .aplayer-body {
+    background: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+/* 滚动条 */
+.aplayer .aplayer-list ol::-webkit-scrollbar {
+    width: 5px;
+}
+
+.aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: var(--theme-color) !important;
+}
+
+.aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
+    background-color: var(--theme-color) !important;
+}
+
+/* 圆角 */
+.aplayer.aplayer-fixed .aplayer-list {
+    border-radius: 6px 6px 0 0 !important;
+}
+
+.aplayer.aplayer-fixed .aplayer-miniswitcher {
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    transition: 0.28s !important;
+    border-radius: 6px !important;
+}
+
+/* 选中与播放中歌曲激活颜色 */
+.aplayer .aplayer-list ol li:hover {
+    background: var(--theme-color) !important;
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+    background: var(--theme-color) !important;
+}
+
+/* 歌词 */
+.aplayer-lrc p {
+    color: #ffffff !important;
+    text-shadow: #000000 1px 0 0, #000000 0 1px 0, #000000 -1px 0 0, #000000 0 -1px 0 !important;
+}
+
+/* Aplayer黑暗模式 */
+[data-theme="dark"] .aplayer {
+    background: rgba(22, 22, 22, 0.6) !important;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .aplayer.aplayer-fixed .aplayer-body {
+    background: rgba(22, 22, 22, 0.6) !important;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.07), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+    fill: #d4d4d4;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li:hover {
+    background: var(--theme-color) !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li.aplayer-list-light {
+    background: var(--theme-color) !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+    color: #d4d4d4;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li .aplayer-list-index {
+    color: #d4d4d4;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li .aplayer-list-author {
+    color: #d4d4d4;
+}
+
+
+@media screen and (orientation: portrait) {
+    #web_bg {
+        background: url(/img/48E7ECD8692826D5F37A73DA82690AD0.png);
+        background-attachment: local;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    #web_bg {
+        background: url(https://cdn-hw-static2.shanhutech.cn/bizhi/staticwp/202404/ac429d6a07f452aa53968e115477911c--4188066966.jpg);
+        background-attachment: local;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* 小冰分类分类磁铁黑夜模式适配 */
+/* 一般状态 */
+[data-theme="dark"] .magnet_link_context {
+    background: #1e1e1e;
+    color: antiquewhite;
+  }
+  /* 鼠标悬浮状态 */
+  [data-theme="dark"] .magnet_link_context:hover {
+    background: #3ecdf1;
+    color: #f2f2f2;
+  }
+
+  .heimu, .heimu a, a .heimu, .heimu a.new {
+         background-color: #252525;
+         color: #252525;
+         text-shadow: none;
+     }
+     .heimu:hover, .heimu:active,
+     .heimu:hover .heimu, .heimu:active .heimu {
+         color: white !important;
+     }
+    .heimu:hover a, a:hover .heimu,
+    .heimu:active a, a:active .heimu {
+        color: lightblue !important;
+    }
+    .heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
+    .heimu:active .new, .heimu .new:active, .new:active .heimu {
+        color: #BA0000 !important;
+    }
